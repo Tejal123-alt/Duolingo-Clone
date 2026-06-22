@@ -1,0 +1,187 @@
+body{
+background:#f7f7f7;
+font-family:Arial,sans-serif;
+}
+
+.sidebar{
+height:100vh;
+background:white;
+border-right:1px solid #ddd;
+padding:20px;
+position:sticky;
+top:0;
+}
+
+.logo{
+color:#58cc02;
+font-weight:bold;
+}
+
+.nav-link{
+color:#555;
+font-weight:600;
+margin-bottom:10px;
+}
+
+.nav-link.active{
+color:#58cc02;
+}
+
+.lesson-area{
+padding:30px;
+}
+
+.top-stats{
+display:flex;
+justify-content:center;
+gap:30px;
+font-size:22px;
+font-weight:bold;
+}
+
+.lesson-path{
+display:flex;
+flex-direction:column;
+align-items:center;
+gap:20px;
+}
+
+.lesson{
+width:70px;
+height:70px;
+border-radius:50%;
+background:white;
+border:4px solid #ddd;
+display:flex;
+justify-content:center;
+align-items:center;
+font-size:24px;
+font-weight:bold;
+cursor:pointer;
+transition:.3s;
+}
+
+.lesson:hover{
+transform:scale(1.1);
+}
+
+.lesson.completed{
+background:#58cc02;
+border:none;
+color:white;
+}
+
+.lesson.active{
+background:#1cb0f6;
+border:none;
+color:white;
+}
+
+.right-panel{
+padding:30px;
+}
+
+.mobile-nav{
+position:fixed;
+bottom:0;
+left:0;
+width:100%;
+background:white;
+display:flex;
+justify-content:space-around;
+padding:12px;
+border-top:1px solid #ddd;
+}
+
+.mobile-nav a{
+text-decoration:none;
+font-weight:bold;
+color:#555;
+}
+
+.mobile-nav a.active{
+color:#58cc02;
+}
+
+@media(max-width:992px){
+
+.lesson{
+width:60px;
+height:60px;
+font-size:20px;
+}
+
+.top-stats{
+font-size:18px;
+}
+
+.lesson-area{
+padding-bottom:90px;
+}
+
+}
+
+/*  Logo*/
+
+.logo{
+    color:#58CC02;
+    font-weight:900;
+}
+
+.logo-icon{
+    color:#1CB0F6;
+    margin-right:6px;
+}
+
+
+/* Top Stats */
+
+.top-stats{
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    font-size:18px;
+    font-weight:700;
+}
+
+.stat-fire{
+    color:#ff9600;
+}
+
+.stat-heart{
+    color:#ff4b4b;
+}
+
+.stat-star{
+    color:#ffc800;
+}
+
+
+/*  Lesson Check Icon*/
+
+.lesson.completed i{
+    font-size:22px;
+    color:white;
+}
+
+
+/* Streak*/
+
+.streak-icon{
+    color:#ff9600;
+}
+
+
+/* Mobile Responsive */
+
+@media(max-width:576px){
+
+    .top-stats{
+        gap:15px;
+        font-size:15px;
+    }
+
+    .logo{
+        font-size:24px;
+    }
+}
